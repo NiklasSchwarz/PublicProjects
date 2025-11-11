@@ -23,9 +23,9 @@ My work combines a deep understanding of modern neural architectures with a pass
 **Goal:** Explore and evaluate transformer-based segmentation models for high-resolution scene understanding.  
 **Highlights:**  
 - Conducted comparative experiments using **SegFormer-B0 to B5** backbones on the **Cityscapes** and **ADE20K** datasets.  
-- Analyzed the trade-offs between **parameter scaling** and **performance gain**, achieving a **+0.1 mIoU improvement** with a **+20M parameter increase**.  
+- Analyzed the trade-offs between **parameter scaling** and **performance gain**, achieving a **+0.1 mIoU improvement** without a **parameter increase**.  
 - Extended training pipeline with mixed-precision inference and distributed data loading.  
-**Tech stack:** PyTorch Lightning, Hugging Face Transformers, TensorBoard  
+**Tech stack:** PyTorch, Hugging Face Transformers, TensorBoard  
 
 🧠 *Focus:* Vision transformers, efficient segmentation, empirical evaluation  
 
