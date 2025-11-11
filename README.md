@@ -22,7 +22,8 @@ My work combines a deep understanding of modern neural architectures with a pass
 ### 🧩 2. SegFormer – Semantic Segmentation Studies  
 **Goal:** Explore and evaluate transformer-based segmentation models for high-resolution scene understanding.  
 **Highlights:**  
-- Conducted comparative experiments using **SegFormer-B0 to B5** backbones on the **Cityscapes** and **ADE20K** datasets.  
+- Conducted comparative experiments using **SegFormer-B0 to B5** backbones on the **Cityscapes** and **ADE20K** datasets.
+- Applied **Hadamard encoding** for representation robustness without adding extra parameters.  
 - Analyzed the trade-offs between **parameter scaling** and **performance gain**, achieving a **+0.1 mIoU improvement** without a **parameter increase**.  
 - Extended training pipeline with mixed-precision inference and distributed data loading.  
 **Tech stack:** PyTorch, Hugging Face Transformers, TensorBoard  
@@ -34,8 +35,7 @@ My work combines a deep understanding of modern neural architectures with a pass
 ### 🗣️ 3. Speech Encoder for the GermanEval 2019 Task  
 **Goal:** Build and fine-tune a **speech embedding model** for automatic speaker and emotion classification in German audio datasets.  
 **Highlights:**  
-- Designed a **self-supervised speech encoder** trained on large-scale German corpora.  
-- Applied **Hadamard encoding** for representation robustness without adding extra parameters.  
+- Designed a **self-supervised speech encoder** trained on large-scale German corpora. 
 - Reached top-tier performance on the **GermanEval 2019** benchmark with strong generalization across unseen speakers.  
 **Tech stack:** PyTorch, torchaudio, scikit-learn, NumPy  
 
