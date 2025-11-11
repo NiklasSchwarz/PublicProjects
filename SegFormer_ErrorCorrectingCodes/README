@@ -1,0 +1,20 @@
+MMSegmentation 1.1.0 installation:
+
+pip install -U openmim
+mim install mmengine
+mim install "mmcv==2.0.1"
+
+pip install "mmsegmentation==1.0.0"
+
+pip install reedmuller
+
+Link dataset:
+mkdir -p data
+ln -s /beegfs/data/shared/cityscapes_daformer data/cityscapes
+
+
+Training:
+sbatch tools/slurm_train.sh configs/segformer_mit-b0_8xb1-160k_cityscapes-1024x1024.py --work-dir <work_dir path>
+
+Testing:
+sbatch tools/slurm_test.sh configs/segformer_mit-b0_8xb1-160k_cityscapes-1024x1024.py <path to pth checkpoint file>
