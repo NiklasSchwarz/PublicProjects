@@ -1,0 +1,3 @@
+from .patch_discriminator_286x286 import Discriminator_286x286
+from .patch_discriminator_70x70 import Discriminator_70x70
+from .patch_discriminator_30x30 import Discriminator_30x30

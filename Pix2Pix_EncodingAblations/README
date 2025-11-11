@@ -1,0 +1,13 @@
+Environment Setup:
+    Run /setup.sh #Reads the environment.yml
+
+Link dataset:
+    mkdir -p data
+    ln -s /beegfs/data/shared/cityscapes_daformer data/cityscapes
+
+
+Training:
+    sbatch tools/slurm_train.sh {--no-hadamard} {--like-paper} {--epochs 200} {--backbone "unet" or "resunet" or "unet3plus"} {--num-classes 19} {--code-size 32} {--batch-size 1}
+
+Testing:
+    sbatch tools/slurm_test.sh {--no-hadamard} {--like-paper} {--backbone "unet" or "resunet" or "unet3plus"} {--num-classes 19} {--code-size 32}

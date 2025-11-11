@@ -1,0 +1,19 @@
+name: hoyos-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - scikit-image
+  - matplotlib
+  - ipython
+  - jupyterlab
+  - tensorflow-cu11     # oder eine andere 2.x-Version
+  - pip
+  - pip:
+    - kaggle
+  - pip:
+    - datasets             # Hugging Face Datasets
+    - huggingface-hub      # für Authentifizierung und Cache
